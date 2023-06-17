@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.fragment.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapplication.ui.fragment.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapplication.ui.fragment.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/dialogFaragment"
+        android:name="com.example.myapplication.ui.fragment.home.photo.diolog.DialogFaragment"
+        android:label="DialogFaragment" />
+    <fragment
+        android:id="@+id/navigation_about_us"
+        android:name="com.example.myapplication.ui.fragment.about_us.AboutUsFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.myapplication.ui.fragment.filter.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.myapplication.ui.fragment.home.view_pager.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" />
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.example.myapplication.ui.fragment.home.photo.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.myapplication.ui.fragment.home.real_estate.RealEstateFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_real_estate" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplication.ui.fragment.registration.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/radisFragment"
+        android:name="com.example.myapplication.ui.fragment.registration.RagisFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_ragis" />
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.myapplication.ui.fragment.add.AddFragment"
+        android:label="@string/title_add"
+        tools:layout="@layout/fragment_add" />
+
+</navigation>
